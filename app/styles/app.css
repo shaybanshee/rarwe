@@ -1,4 +1,27 @@
 /* app.styles/app.css */
+.rr-sidebar {
+    float: left;
+    width: calc(100%/3);
+}
+
+.rr-main-panel {
+    float: left;
+    width: calc(100%/1.5);
+}
+
+.rr-list {
+    list-style-type: none;
+}
+
+.rr-band-link > .rr-pointer {
+    margin-left: 5px;
+    display: none;
+}
+
+.rr-band-link.active > .rr-pointer {
+    display: inline-block;
+}
+
 :root {
     --bright-yellow: #ffda00;
     --navitem-link-color: var(--bright-yellow);
