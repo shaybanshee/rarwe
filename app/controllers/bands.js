@@ -1,9 +1,12 @@
 import Controller from '@ember/controller';
 import Band from 'rarwe/models/band';
+import { empty } from '@ember/object/computed';
 
 export default Controller.extend({
     isAddingBand: false,
     newBandName: '',
+
+    isAddButtonDisabled: empty('newBandName'),
 
     actions: {
         addBand() {
