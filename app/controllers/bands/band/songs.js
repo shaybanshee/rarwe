@@ -9,8 +9,7 @@ export default Controller.extend({
 
     isAddButtonDisabled: empty('newSongTitle'),
 
-    actions: {
-    
+    actions: { 
         addSong()   {
             this.set('isAddingSong', true);
         },
@@ -25,5 +24,10 @@ export default Controller.extend({
             this.model.songs.pushObject(newSong);
             this.set('newSongTitle', '');
         },
+
+        updateRating(params) {
+            let { item: song, rating } = params;
+            song.set('rating', rating);
+        }
     }
 });
