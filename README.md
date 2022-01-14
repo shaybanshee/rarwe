@@ -1,7 +1,6 @@
 # rarwe
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a learning application for an EmberJS based music application in an effort to learn how Ember serves data.
 
 ## Prerequisites
 
